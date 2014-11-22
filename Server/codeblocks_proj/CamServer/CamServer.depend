@@ -1,0 +1,208 @@
+# depslib dependency file v1.0
+1416139087 source:/home/s117/CodeBlocksProjects/CamServer/CamControlserver.cpp
+	"CamControlserver.h"
+	"ConfigManager.h"
+	<stdlib.h>
+	<stdio.h>
+	<memory.h>
+	<errno.h>
+	"md5.h"
+
+1416139087 /home/s117/CodeBlocksProjects/CamServer/CamControlserver.h
+	<time.h>
+	"NetworkServer.h"
+	"SerialPort.h"
+	"CntServoControl.h"
+
+1416139087 /home/s117/CodeBlocksProjects/CamServer/NetworkServer.h
+	<stack>
+	<list>
+	<pthread.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	"nullptr.h"
+	"PThreadPool.h"
+
+1416139087 /home/s117/CodeBlocksProjects/CamServer/nullptr.h
+
+1416139087 /home/s117/CodeBlocksProjects/CamServer/PThreadPool.h
+	<pthread.h>
+	<sched.h>
+	<semaphore.h>
+	<stack>
+	<list>
+	"nullptr.h"
+
+1416139087 /home/s117/CodeBlocksProjects/CamServer/SerialPort.h
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+	<fcntl.h>
+	<errno.h>
+	<termios.h>
+
+1416139086 /home/s117/CodeBlocksProjects/CamServer/CntServoControl.h
+	"ServoControl.h"
+	"SerialPort.h"
+	"PThreadPool.h"
+	"nullptr.h"
+	"ConfigManager.h"
+	"thread_enabler.h"
+
+1416139087 /home/s117/CodeBlocksProjects/CamServer/ServoControl.h
+
+1416139087 /home/s117/CodeBlocksProjects/CamServer/ConfigManager.h
+
+1416139087 /home/s117/CodeBlocksProjects/CamServer/thread_enabler.h
+	"pthread.h"
+
+1416139087 /home/s117/CodeBlocksProjects/CamServer/md5.h
+
+1416139087 source:/home/s117/CodeBlocksProjects/CamServer/CntServoControl.cpp
+	"CntServoControl.h"
+
+1416139087 source:/home/s117/CodeBlocksProjects/CamServer/ConfigManager.cpp
+	"ConfigManager.h"
+
+1416139087 source:/home/s117/CodeBlocksProjects/CamServer/FixServoControl.cpp
+	"FixServoControl.h"
+
+1416139087 /home/s117/CodeBlocksProjects/CamServer/FixServoControl.h
+	"ServoControl.h"
+	"SerialPort.h"
+	"PThreadPool.h"
+	"nullptr.h"
+	"ConfigManager.h"
+	"thread_enabler.h"
+
+1416139087 source:/home/s117/CodeBlocksProjects/CamServer/main.cpp
+	"CamControlserver.h"
+	"CntServoControl.h"
+	"ConfigManager.h"
+
+1416139086 source:/home/s117/CodeBlocksProjects/CamServer/md5.cpp
+	<memory.h>
+	"md5.h"
+
+1416139086 source:/home/s117/CodeBlocksProjects/CamServer/NetworkServer.cpp
+	"NetworkServer.h"
+	<unistd.h>
+	<stdlib.h>
+
+1416139087 source:/home/s117/CodeBlocksProjects/CamServer/PThreadPool.cpp
+	"PThreadPool.h"
+	<stdlib.h>
+	<unistd.h>
+
+1416139087 source:/home/s117/CodeBlocksProjects/CamServer/SerialPort.cpp
+	"SerialPort.h"
+
+1416139087 source:/home/s117/CodeBlocksProjects/CamServer/thread_enabler.c
+	"thread_enabler.h"
+
+1416586609 source:/home/s117/camsrv/CamServer/CamControlserver.cpp
+	"CamControlserver.h"
+	"ConfigManager.h"
+	<stdlib.h>
+	<stdio.h>
+	<memory.h>
+	<errno.h>
+	"md5.h"
+
+1416494088 /home/s117/camsrv/CamServer/CamControlserver.h
+	<time.h>
+	"NetworkServer.h"
+	"SerialPort.h"
+	"CntServoControl.h"
+
+1416071829 /home/s117/camsrv/CamServer/NetworkServer.h
+	<stack>
+	<list>
+	<pthread.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	"nullptr.h"
+	"PThreadPool.h"
+
+1416071843 /home/s117/camsrv/CamServer/nullptr.h
+
+1415509436 /home/s117/camsrv/CamServer/PThreadPool.h
+	<pthread.h>
+	<sched.h>
+	<semaphore.h>
+	<stack>
+	<list>
+	"nullptr.h"
+
+1416071833 /home/s117/camsrv/CamServer/SerialPort.h
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+	<fcntl.h>
+	<errno.h>
+	<termios.h>
+
+1416071815 /home/s117/camsrv/CamServer/CntServoControl.h
+	"ServoControl.h"
+	"SerialPort.h"
+	"PThreadPool.h"
+	"nullptr.h"
+	"ConfigManager.h"
+	"thread_enabler.h"
+
+1416071836 /home/s117/camsrv/CamServer/ServoControl.h
+
+1416583515 /home/s117/camsrv/CamServer/ConfigManager.h
+
+1416142410 /home/s117/camsrv/CamServer/thread_enabler.h
+	"pthread.h"
+
+1416071840 /home/s117/camsrv/CamServer/md5.h
+
+1416143288 source:/home/s117/camsrv/CamServer/CntServoControl.cpp
+	"CntServoControl.h"
+
+1416583828 source:/home/s117/camsrv/CamServer/ConfigManager.cpp
+	"ConfigManager.h"
+
+1416143301 source:/home/s117/camsrv/CamServer/FixServoControl.cpp
+	"FixServoControl.h"
+
+1416071822 /home/s117/camsrv/CamServer/FixServoControl.h
+	"ServoControl.h"
+	"SerialPort.h"
+	"PThreadPool.h"
+	"nullptr.h"
+	"ConfigManager.h"
+	"thread_enabler.h"
+
+1416489123 source:/home/s117/camsrv/CamServer/main.cpp
+	"CamControlserver.h"
+	"CntServoControl.h"
+	"ConfigManager.h"
+	<signal.h>
+
+1416142410 source:/home/s117/camsrv/CamServer/md5.cpp
+	<memory.h>
+	"md5.h"
+
+1416142745 source:/home/s117/camsrv/CamServer/NetworkServer.cpp
+	"NetworkServer.h"
+	<unistd.h>
+	<stdlib.h>
+
+1416071791 source:/home/s117/camsrv/CamServer/PThreadPool.cpp
+	"PThreadPool.h"
+	<stdlib.h>
+	<unistd.h>
+
+1416071797 source:/home/s117/camsrv/CamServer/SerialPort.cpp
+	"SerialPort.h"
+
+1416071807 source:/home/s117/camsrv/CamServer/thread_enabler.c
+	"thread_enabler.h"
+

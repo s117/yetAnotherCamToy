@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CamServer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/CamServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lpthread" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/CamServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lpthread" />
+				</Linker>
+			</Target>
+			<Target title="MIPS_Debug">
+				<Option output="bin/MIPS_Debug/CamServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/MIPS_Debug/" />
+				<Option type="1" />
+				<Option compiler="mips_gnu_gcc_compiler" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lpthread" />
+				</Linker>
+			</Target>
+			<Target title="MIPS_Release">
+				<Option output="bin/MIPS_Release/CamServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/MIPS_Release/" />
+				<Option type="1" />
+				<Option compiler="mips_gnu_gcc_compiler" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lpthread" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../../camsrv/CamServer/CamControlserver.cpp" />
+		<Unit filename="../../camsrv/CamServer/CamControlserver.h" />
+		<Unit filename="../../camsrv/CamServer/CntServoControl.cpp" />
+		<Unit filename="../../camsrv/CamServer/CntServoControl.h" />
+		<Unit filename="../../camsrv/CamServer/ConfigManager.cpp" />
+		<Unit filename="../../camsrv/CamServer/ConfigManager.h" />
+		<Unit filename="../../camsrv/CamServer/FixServoControl.cpp" />
+		<Unit filename="../../camsrv/CamServer/FixServoControl.h" />
+		<Unit filename="../../camsrv/CamServer/NetworkServer.cpp" />
+		<Unit filename="../../camsrv/CamServer/NetworkServer.h" />
+		<Unit filename="../../camsrv/CamServer/PThreadPool.cpp" />
+		<Unit filename="../../camsrv/CamServer/PThreadPool.h" />
+		<Unit filename="../../camsrv/CamServer/SerialPort.cpp" />
+		<Unit filename="../../camsrv/CamServer/SerialPort.h" />
+		<Unit filename="../../camsrv/CamServer/ServoControl.h" />
+		<Unit filename="../../camsrv/CamServer/main.cpp" />
+		<Unit filename="../../camsrv/CamServer/md5.cpp" />
+		<Unit filename="../../camsrv/CamServer/md5.h" />
+		<Unit filename="../../camsrv/CamServer/nullptr.h" />
+		<Unit filename="../../camsrv/CamServer/thread_enabler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../camsrv/CamServer/thread_enabler.h" />
+		<Extensions>
+			<code_completion />
+			<envvars set="wr703n_openwrt" />
+			<debugger>
+				<remote_debugging target="MIPS_Debug">
+					<options conn_type="0" serial_baud="115200" ip_address="10.50.1.2" ip_port="5678" />
+				</remote_debugging>
+			</debugger>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
