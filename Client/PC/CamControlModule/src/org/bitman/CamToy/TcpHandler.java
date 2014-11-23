@@ -249,7 +249,7 @@ public class TcpHandler {
                 while (m_isOnService) {
                     int rtnVal;
                     rtnVal = Recieve();
-                    if ((rtnVal == TCP_LINK_RETURN_ERROR_DISCONNECTION) && (m_RxBuffer.limit() - m_RxBuffer.position() < PACKET_LENGTH)) {
+                    if (((rtnVal == TCP_LINK_RETURN_ERROR_DISCONNECTION)||((rtnVal == TCP_LINK_RETURN_ERROR_RECV))) && (m_RxBuffer.limit() - m_RxBuffer.position() < PACKET_LENGTH)) {
                         TcpAsyncSession failSession;
                         while (!m_RxQueue.isEmpty()) {
                             failSession = m_RxQueue.poll();

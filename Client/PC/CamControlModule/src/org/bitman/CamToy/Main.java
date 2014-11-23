@@ -35,7 +35,7 @@ public class Main {
 
     public static void Connection() {
         int rtnVal;
-        rtnVal = module.Connect("10.50.1.2", 1736);
+        rtnVal = module.Connect("10.60.1.2", 1736);
         switch (rtnVal) {
             case CommModule.COMM_NEED_AUTH:
                 rtnVal = CommModule.COMM_UNINITIALIZED;
@@ -84,6 +84,7 @@ public class Main {
             System.out.println("\nSelect operation:");
             System.out.println("\t'S' -- (S)etting mode");
             System.out.println("\t'Q' -- (Q)uery mode");
+            System.out.println("\t'N' -- send (N)op and update servo's status");
             System.out.println("\t'T' -- show servo s(T)ate");
             System.out.println("\t'X' -- disconnect and e(X)it");
             String op = sc.nextLine();
@@ -93,7 +94,9 @@ public class Main {
                 StartQueryMenu();
             } else if (op.equalsIgnoreCase("T")) {
                 System.out.println(module.GetServoExceptionByErrno(module.GetServoStatus()));
-            } else if (op.equalsIgnoreCase("X")) {
+            } else if (op.equalsIgnoreCase("N")) {
+                module.SendNOP();
+            }else if (op.equalsIgnoreCase("X")) {
                 System.out.println("Exiting...");
                 module.Disconnect();
                 return;

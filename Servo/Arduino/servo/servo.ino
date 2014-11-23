@@ -14,13 +14,21 @@ unsigned char failX[3] = {'F','X','\0'};
 unsigned char failY[3] = {'F','Y','\0'};
 unsigned char failU[3] = {'F','U','\0'};
 
+int ledPin = 13;                 // LED connected to digital pin 13
+
 void setup() 
 {
+  pinMode(ledPin, OUTPUT);
+  digitalWrite(ledPin, LOW);
+  delay(10000);
+  
   Serial.begin(115200);
   axisX.attach(9);
   axisY.attach(10);
   axisX.write(MIDDLE_AXISX);
   axisY.write(MIDDLE_AXISY);
+  
+  digitalWrite(ledPin, HIGH);
   Serial.println("Control system ready...");
 } 
 
@@ -28,15 +36,15 @@ void loop()
 {
   unsigned char axispart;
   unsigned char valpart;
+  digitalWrite(ledPin, HIGH);
   
   while(Serial.available() == 0);
-  axispart = Serial.read();
-  if(axispart == 'I')
+  digitalWrite(ledPin, LOW);
+  if((axispart = Serial.read()) == 'I')
     return;
 
   while(Serial.available() == 0);
-  valpart = Serial.read();
-  if(axispart == 'I')
+  if((valpart = Serial.read())== 'I')
     return;
 
   switch(axispart){

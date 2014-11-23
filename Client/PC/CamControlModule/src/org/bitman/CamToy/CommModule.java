@@ -404,16 +404,16 @@ public class CommModule implements ExceptionCallback {
             detail = "Servo system working finely.";
         } else {
             detail = "Servo system meets following problem:\n";
-            if ((errno | SERVO_FAIL) != 0) {
+            if ((errno & SERVO_FAIL) != 0) {
                 detail += "\tServo drive system report an error.\n";
             }
-            if ((errno | SERVO_OFFLINE) != 0) {
+            if ((errno & SERVO_OFFLINE) != 0) {
                 detail += "\tServo offline.\n";
             }
-            if ((errno | SERVO_BADLINK) != 0) {
+            if ((errno & SERVO_BADLINK) != 0) {
                 detail += "\tSerial transmission unstable.\n";
             }
-            if ((errno | SERVO_LINKDOWN) != 0) {
+            if ((errno & SERVO_LINKDOWN) != 0) {
                 detail += "\tSerial port operate fail.\n";
             }
         }
