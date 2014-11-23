@@ -61,29 +61,29 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="../../camsrv/CamServer/CamControlserver.cpp" />
-		<Unit filename="../../camsrv/CamServer/CamControlserver.h" />
-		<Unit filename="../../camsrv/CamServer/CntServoControl.cpp" />
-		<Unit filename="../../camsrv/CamServer/CntServoControl.h" />
-		<Unit filename="../../camsrv/CamServer/ConfigManager.cpp" />
-		<Unit filename="../../camsrv/CamServer/ConfigManager.h" />
-		<Unit filename="../../camsrv/CamServer/FixServoControl.cpp" />
-		<Unit filename="../../camsrv/CamServer/FixServoControl.h" />
-		<Unit filename="../../camsrv/CamServer/NetworkServer.cpp" />
-		<Unit filename="../../camsrv/CamServer/NetworkServer.h" />
-		<Unit filename="../../camsrv/CamServer/PThreadPool.cpp" />
-		<Unit filename="../../camsrv/CamServer/PThreadPool.h" />
-		<Unit filename="../../camsrv/CamServer/SerialPort.cpp" />
-		<Unit filename="../../camsrv/CamServer/SerialPort.h" />
-		<Unit filename="../../camsrv/CamServer/ServoControl.h" />
-		<Unit filename="../../camsrv/CamServer/main.cpp" />
-		<Unit filename="../../camsrv/CamServer/md5.cpp" />
-		<Unit filename="../../camsrv/CamServer/md5.h" />
-		<Unit filename="../../camsrv/CamServer/nullptr.h" />
-		<Unit filename="../../camsrv/CamServer/thread_enabler.c">
+		<Unit filename="../../qt_proj/CamServer/CamServer/CamControlserver.cpp" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/CamControlserver.h" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/CntServoControl.cpp" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/CntServoControl.h" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/ConfigManager.cpp" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/ConfigManager.h" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/FixServoControl.cpp" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/FixServoControl.h" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/NetworkServer.cpp" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/NetworkServer.h" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/PThreadPool.cpp" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/PThreadPool.h" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/SerialPort.cpp" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/SerialPort.h" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/ServoControl.h" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/main.cpp" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/md5.cpp" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/md5.h" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/nullptr.h" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/thread_enabler.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../camsrv/CamServer/thread_enabler.h" />
+		<Unit filename="../../qt_proj/CamServer/CamServer/thread_enabler.h" />
 		<Extensions>
 			<code_completion />
 			<envvars set="wr703n_openwrt" />

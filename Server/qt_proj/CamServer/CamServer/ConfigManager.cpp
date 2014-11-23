@@ -16,7 +16,7 @@ const char* ConfigManager::getLoginUser() {
 }
 
 const char* ConfigManager::getLoginPass() {
-    return "nyarukoo";
+    return "nyaruko";
 }
 
 const char* ConfigManager::getLoginCipher() {
@@ -24,7 +24,7 @@ const char* ConfigManager::getLoginCipher() {
 }
 
 const char* ConfigManager::getCOM() {
-    return "/dev/ttyS0";
+    return "/dev/ttyATH0";
 }
 
 int ConfigManager::getServoBlanceX() {

@@ -1,0 +1,10 @@
+*.so
+*.o
+Server/codeblocks_proj/CamServer/bin/
+Server/codeblocks_proj/CamServer/obj/
+Server/qt_proj/CamServer/build-CamServer*GCC_64bit-Debug/
+build-CamServer-Desktop_Qt_5_3_GCC_64bit-Release/
+CamServer/
+s117@GS:~/yetAnotherCamToy$ ls Server/qt_proj/CamServer/
+build-CamServer-Desktop_Qt_5_3_GCC_64bit-Debug/
+build-CamServer-Desktop_Qt_5_3_GCC_64

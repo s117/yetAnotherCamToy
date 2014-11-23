@@ -228,6 +228,12 @@ void CamControlServer::innerAction(int connfd, struct sockaddr *clientAddr) {
             }
         }
     } catch (InternalException &ex) {
+        if(ex.reason != MSG_ERROR_SERIAL_OCCUPY){
+            pthread_mutex_unlock(&serialMutex);
+            servoctl->setmove('X',SERVO_MOVE_DIRECTION_STOP);
+            servoctl->setmove('Y',SERVO_MOVE_DIRECTION_STOP);
+        }
+
         const char* quit_reason;
         switch (ex.reason) {
         case MSG_HELLO_PASSWD_INDICATE:quit_reason = CAM_CONTROL_DETAIL_STR_MSG_HELLO_PASSWD_INDICATE;break;
@@ -244,7 +250,7 @@ void CamControlServer::innerAction(int connfd, struct sockaddr *clientAddr) {
         printTimeStampFirst();
         printf("IP:%s Disconnect,reason:%s\n",inet_ntoa(((struct sockaddr_in*)clientAddr)->sin_addr),quit_reason);
     }
-    pthread_mutex_unlock(&serialMutex);
+
     shutdown(connfd, SHUT_RDWR);
 }
 
